@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  background-image: radial-gradient(
+    circle at 44% 13%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 98%,
+    transparent 98%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 87% 84%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 46%,
+    transparent 46%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 84% 60%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 40%,
+    transparent 40%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 21% 32%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 28%,
+    transparent 28%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 57% 12%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 34%,
+    transparent 34%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 33% 60%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 29%,
+    transparent 29%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 3% 11%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 60%,
+    transparent 60%,
+    transparent 100%
+  ),
+  radial-gradient(
+    circle at 0% 74%,
+    hsla(237, 0%, 100%, 0.05) 0%,
+    hsla(237, 0%, 100%, 0.05) 87%,
+    transparent 87%,
+    transparent 100%
+  ),
+  linear-gradient(45deg, rgb(99, 105, 190), rgb(99, 70, 205));
+  width: 100vw;
+  background-repeat: repeat;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    /* background: url(""); */
+    background-image: radial-gradient(
+        circle at 44% 13%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 98%,
+        transparent 98%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 87% 84%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 46%,
+        transparent 46%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 84% 60%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 40%,
+        transparent 40%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 21% 32%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 28%,
+        transparent 28%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 57% 12%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 34%,
+        transparent 34%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 33% 60%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 29%,
+        transparent 29%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 3% 11%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 60%,
+        transparent 60%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 0% 74%,
+        hsla(237, 0%, 100%, 0.05) 0%,
+        hsla(237, 0%, 100%, 0.05) 87%,
+        transparent 87%,
+        transparent 100%
+      ),
+      linear-gradient(45deg, rgb(99, 105, 190), rgb(99, 70, 205));
+    background-repeat: repeat;
+  }
+}
+
+*,
+**,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  max-width: min(100vw, 600px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: min(90vw, 1000px);
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  main > * {
+    width: 50%;
+  }
+}
+
+.content {
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.content h1 {
+  line-height: 1.25em;
+}
+
+@media (min-width: 768px) {
+  .content {
+    color: white;
+    text-align: left;
+    padding: 1.5em;
+    font-size: 0.9em;
+  }
+
+  .content h1 {
+    font-size: 2.1em;
+  }
+}
+
+.signup {
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  flex-wrap: nowrap;
+}
+
+.signup_pricing,
+.signup_form {
+  border-radius: 8px;
+}
+
+.signup_pricing {
+  box-shadow: 0px 0.45em 0px 0px blueviolet;
+  background-color:mediumturquoise;
+  padding: 0.5em;
+  text-align: inherit;
+  color: white;
+  font-size: 0.8em;
+}
+
+.signup_form{
+  box-shadow: 0px 0.45em 0px 0px blueviolet;
+  background-color: white;
+  padding: 1.5em;
+  position: relative;
+}
+
+.signup_form input{
+  width: 100%;
+  height: 3em;
+  padding: 0.1em;
+  margin-top: 0.9em;
+  font-family: inherit;
+  font-weight: bolder;
+}
+
+.signup_form input:not([type=submit]){
+  border: 1px solid #e4e2e2;
+  border-radius: 4px;
+}
+
+.signup_form input ~ span.error-message{
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 0;
+  color: #ff7a7a;
+  font-size: 0.65em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.signup_form input.error{
+  border: 2px solid #ff7a7a;
+}
+
+input[type=submit]{
+  border:none;
+  border-radius: 4px;
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  box-shadow: 0px 0.3em 0px 0px #38cc8c;
+  background-color: #44e49f;
+}
+
+.terms-notice{
+  display: block;
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 0.75em;
+  color: #b9b6d3;
+}
+
+.terms-notice span{
+  color:  #ff7a7a;
+  font-weight: bolder;
+}
+
+footer{
+  text-align: center;
+  color: white;
+  font-size: smaller;
+}
+
+footer a{
+  color: inherit;
+}
+
